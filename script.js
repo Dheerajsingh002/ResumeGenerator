@@ -46,6 +46,8 @@ function generateCV()
    let adressT=document.getElementById("adressT")
    adressT.innerHTML = adressField;
 
+ 
+
    let anchor=document.getElementById("fbField").value;
    document.getElementById("fbT").setAttribute('href',anchor);
 
@@ -54,7 +56,14 @@ function generateCV()
 
    let anchor2=document.getElementById("linkedField").value;
    document.getElementById("linkedT").setAttribute('href',anchor2);
+
+   let objectiveField=document.getElementById("objectiveField").value;
+   let objectiveT = document.getElementById("objectiveT");
+   console.log(objectiveField);
+   objectiveT.innerHTML = objectiveField;
+   console.log(objectiveT);
    
+
 
   let wes = document.getElementsByClassName("weField")
   let str= "";
